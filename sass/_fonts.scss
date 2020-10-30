@@ -1,0 +1,12 @@
+/*--------------------------------------------------------------
+# Embedded Fonts
+--------------------------------------------------------------*/
+@font-face {
+    font-family: 'Canterbury';
+    src: url('../../fonts/canterbury-webfont.woff2') format('woff2'),
+        url('../../fonts/canterbury-webfont.woff') format('woff'),
+        url('../../fonts/canterbury.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
