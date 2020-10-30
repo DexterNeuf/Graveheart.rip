@@ -11,6 +11,56 @@
 	padding: 0;
 }
 
+i {
+	padding: 0.5rem;
+}
+
+#cf {
+	position: relative;
+	height: 281px;
+	width: 450px;
+	margin: 0 auto;
+}
+
+#cf img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
+
+@keyframes cf3FadeInOut {
+	0% {
+		opacity: 1;
+	}
+
+	45% {
+		opacity: 1;
+	}
+
+	55% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+#cf img.top {
+	animation-name: cf3FadeInOut;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+	animation-direction: alternate;
+}
+
+
 /* Make sure embeds and iframes fit their containers. */
 
 embed,
